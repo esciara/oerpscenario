@@ -42,6 +42,10 @@ coverage.xml
 .project
 .pydevproject
 
+# IDE junk
+.idea/*
+*.iml
+
 # Rope
 .ropeproject
 
