@@ -24,24 +24,24 @@ import os
 from behave import configuration
 from behave import __main__
 
+
 def main():
     # Adding custom options to behave
     configuration.parser.add_argument(
-    '--server-config',
-    help="Odoo/OpenERP server configuration file"
+            '--server-config',
+            help="Odoo/OpenERP server configuration file"
     )
     configuration.parser.add_argument(
-    '--server-args',
-    help="Odoo/OpenERP arguments to use. "
-    "You should provide a string of agruments "
-    "separated with a pipe: \n"
-    "-c etc/openerp.cfg|--logfile=behave-stdout.log \n"
-    "Only available if odoo/openerp is in sys path"
+            '--server-args',
+            help="Odoo/OpenERP arguments to use. "
+                 "You should provide a string of agruments "
+                 "separated with a pipe: \n"
+                 "-c etc/openerp.cfg|--logfile=behave-stdout.log \n"
+                 "Only available if odoo/openerp is in sys path"
     )
-    default_features = os.path.join(os.path.dirname(__file__), '..', 'features')
-    args = tuple([default_features] + sys.argv[1:])
     # command that run behave
-    sys.exit(__main__.main(args))
+    sys.exit(__main__.main(sys.argv[1:]))
+
 
 if __name__ == '__main__':
     main()
