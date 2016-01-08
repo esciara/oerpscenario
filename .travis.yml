@@ -11,9 +11,14 @@ cache:
   - apt
 
 before_install:
-  - sudo wget -O - https://nightly.odoo.com/odoo.key -nv | apt-key add -
-  - sudo echo "deb http://nightly.odoo.com/8.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
-  - sudo apt-get update && apt-get install -y odoo
+  - sudo service postgresql stop
+  - sudo wget --no-check-certificate -O - https://nightly.odoo.com/odoo.key | sudo apt-key add -
+  - sudo echo "deb http://nightly.odoo.com/8.0/nightly/deb/ ./" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update
+  - sudo  apt-get install odoo
+  - sudo /etc/init.d/odoo stop
+  - createuser -s -U postgres odoo_test
+  - sudo pip install psycogreen
 install:
   - travis_retry pip install -r requirements.txt
   - python setup.py develop
