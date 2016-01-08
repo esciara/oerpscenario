@@ -1,4 +1,4 @@
-from support.tools import puts, set_trace, model, assert_true, assert_less
+from oerpscenario.support.tools import puts, set_trace, model, assert_true, assert_less
 import pprint
 if False:
     def given(str):

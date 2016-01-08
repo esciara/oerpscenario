@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from support import model
+from oerpscenario.support import model
 import socket
 
 

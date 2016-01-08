@@ -1,4 +1,4 @@
-from support import model, assert_equal, puts, set_trace
+from oerpscenario.support import model, assert_equal, puts, set_trace
 
 @given(u'we assign to {users} the groups bellow')
 def impl(ctx, users):

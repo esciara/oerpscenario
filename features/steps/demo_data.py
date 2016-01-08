@@ -1,4 +1,4 @@
-from support.tools import puts, set_trace, model
+from oerpscenario.support.tools import puts, set_trace, model
 
 @given(u'I do not want all demo data to be loaded on install')
 def impl(context):

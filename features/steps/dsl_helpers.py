@@ -4,7 +4,7 @@ helper function for dsl manipulation
 import time
 from functools import wraps
 from behave.matchers import register_type
-from support import *
+from oerpscenario.support import *
 import logging
 
 _logger = logging.getLogger(__name__)

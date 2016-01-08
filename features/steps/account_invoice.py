@@ -1,4 +1,4 @@
-from support import *
+from oerpscenario.support import *
 import datetime
 
 def get_valid_partner(domain=None, type=None, name=None, fields=('id',)):

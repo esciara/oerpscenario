@@ -4,8 +4,8 @@ import datetime as dt
 import subprocess
 import csv
 from behave import step
-from support import model, assert_true, puts
-from .dsl_helpers import openerp_needed_in_path
+from oerpscenario.support import model, assert_true, puts
+from dsl_helpers import openerp_needed_in_path
 
 
 

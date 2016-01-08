@@ -1,4 +1,4 @@
-from support import model, assert_equal, puts, set_trace
+from oerpscenario.support import model, assert_equal, puts, set_trace
 
 @given('we select all users')
 def impl(ctx):

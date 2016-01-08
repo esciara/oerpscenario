@@ -1,4 +1,4 @@
-from support import *
+from oerpscenario.support import *
 from .dsl_helpers import openerp_needed_in_path
 
 @given('the server is up and running OpenERP {version}')

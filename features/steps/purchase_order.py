@@ -1,4 +1,4 @@
-from support import *
+from oerpscenario.support import *
 import datetime
 
 

@@ -1,4 +1,4 @@
-from support import model, assert_equal, set_trace, puts
+from oerpscenario.support import model, assert_equal, set_trace, puts
 import datetime
 
 @given('I create monthly periods on the fiscal year with reference "{fy_ref}"')
