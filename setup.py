@@ -19,7 +19,6 @@ HERE = os.curdir
 sys.path.insert(0, HERE)
 
 from setuptools import find_packages, setup
-from setuptools_behave import behave_test
 
 OERPSCENARIO = os.path.join(HERE, "oerpscenario")
 README = os.path.join(HERE, "README.rst")
