@@ -5,6 +5,10 @@ import time
 from functools import wraps
 from behave.matchers import register_type
 from support import *
+import logging
+
+_logger = logging.getLogger(__name__)
+
 
 def parse_optional(text):
     return text.strip()

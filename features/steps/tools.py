@@ -1,6 +1,5 @@
 import os
 import os.path as osp
-import logging
 import datetime as dt
 import subprocess
 import csv
@@ -8,7 +7,6 @@ from behave import step
 from support import model, assert_true, puts
 from .dsl_helpers import openerp_needed_in_path
 
-_logger = logging.getLogger(__name__)
 
 
 def ref(xmlref):
