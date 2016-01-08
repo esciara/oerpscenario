@@ -11,7 +11,7 @@ cache:
   - apt
 
 before_install:
-  - sudo apt-get --purge remove postgresql
+  - sudo apt-get --purge remove postgresql-9.1
   - sudo wget --no-check-certificate -O - https://nightly.odoo.com/odoo.key | sudo apt-key add -
   - sudo echo "deb http://nightly.odoo.com/8.0/nightly/deb/ ./" | sudo tee -a /etc/apt/sources.list
   - sudo apt-get update
