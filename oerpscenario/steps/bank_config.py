@@ -1,3 +1,4 @@
+from behave import given
 from oerpscenario.support import model, assert_equal, set_trace, puts
 
 @given(u'there is a journal with {field} "{value}" and company "{company_name}"')

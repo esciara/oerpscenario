@@ -1,5 +1,5 @@
+from behave import step
 from oerpscenario.support import *
-import datetime
 
 @step('I confirm the SO')
 def impl(ctx):

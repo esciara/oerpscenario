@@ -1,3 +1,4 @@
+from behave import given, step
 from oerpscenario.support import *
 from .dsl_helpers import openerp_needed_in_path
 

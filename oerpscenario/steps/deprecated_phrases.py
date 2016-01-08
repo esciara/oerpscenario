@@ -1,3 +1,4 @@
+from behave import given
 from oerpscenario.support import model, assert_equal, puts, set_trace
 
 @given(u'we assign to {users} the groups bellow')

@@ -1,3 +1,5 @@
+from behave import given
+
 @given(u'with following rules')
 def impl(ctx):
     assert ctx.found_item
